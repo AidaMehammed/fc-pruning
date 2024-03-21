@@ -6,7 +6,7 @@ This app enables image classification application utilizing pruning techniques f
 
 Image classification is a fundamental task in computer vision, and this app caters to datasets like CIFAR and MNIST. CIFAR-10 and MNIST are widely used benchmark datasets for image classification tasks. CIFAR-10 consists of 60,000 32x32 color images in 10 classes, while MNIST comprises 28x28 grayscale images of handwritten digits.
 
-![states diagram](Image-Classification-Pruning/state_diagram.png)
+![states diagram](data/state_diagram.png)
 
 
 
