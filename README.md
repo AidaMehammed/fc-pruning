@@ -125,3 +125,5 @@ You can run the model compression app as a standalone app in the [FeatureCloud t
 ```shell
 featurecloud test start --app-image featurecloud.ai/fc_model_compression --client-dirs './sample_data/c1,./sample_data/c2' --generic-dir './sample_data/generic'
 ```
+
+Sources: [Featurecloud] (https://github.com/FeatureCloud)
