@@ -1,7 +1,5 @@
 featurecloud
-bios
-pandas
-torch
 torch_pruning
+bios
 torchvision
 
