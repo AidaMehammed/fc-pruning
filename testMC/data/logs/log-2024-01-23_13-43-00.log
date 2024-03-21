@@ -1,0 +1,78 @@
+{"component":"MAIN","instance":"","level":"info","msg":"Controller start","time":"2024-01-23T13:43:00Z"}
+{"component":"MAIN","instance":"","level":"info","msg":"Mode: Dockerized (isolated)","time":"2024-01-23T13:43:00Z"}
+{"component":"MAIN","instance":"","level":"info","msg":"Configuration value 'HasGPU': false","time":"2024-01-23T13:43:00Z"}
+{"component":"DOCKER","instance":"","level":"info","msg":"Removing leftover Docker entities for label: fc-controller-label","time":"2024-01-23T13:43:00Z"}
+{"component":"DOCKER","instance":"","level":"info","msg":"Removed 0 of 0 leftover containers","time":"2024-01-23T13:43:00Z"}
+{"component":"DOCKER","instance":"","level":"info","msg":"Removed 0 of 0 leftover volumes","time":"2024-01-23T13:43:00Z"}
+{"component":"DOCKER","instance":"","level":"info","msg":"Removed 1 of 1 leftover networks","time":"2024-01-23T13:43:00Z"}
+{"component":"GLOBAL","instance":"","level":"info","msg":"Listening on port 9151","time":"2024-01-23T13:43:00Z"}
+{"component":"FLOW","instance":"","level":"error","msg":"Error getting workflow data: [WARNING][SITE] No site is registered. Please create a site in the frontend","time":"2024-01-23T13:43:00Z"}
+{"component":"GLOBAL","instance":"","level":"info","msg":"Listening on port 9150","time":"2024-01-23T13:43:00Z"}
+{"component":"HTTP","instance":"","level":"debug","msg":"Set site received","time":"2024-01-23T13:43:00Z"}
+{"component":"TESTBED","instance":"","level":"info","msg":"Create new test","time":"2024-01-23T13:43:17Z"}
+{"component":"TESTBED","instance":"1","level":"info","msg":"Create volumes and containers...","time":"2024-01-23T13:43:17Z"}
+{"component":"DOCKER","instance":"","level":"info","msg":"Create volume test_1_input_0_1706017397","time":"2024-01-23T13:43:17Z"}
+{"component":"DOCKER","instance":"","level":"info","msg":"Create volume test_1_output_0_1706017397","time":"2024-01-23T13:43:17Z"}
+{"component":"TESTBED","instance":"1","level":"info","msg":"Move data to workspace from /Users/aidamehammed/testMC/dl/testMC/data/data","time":"2024-01-23T13:43:17Z"}
+{"component":"DOCKER","instance":"","level":"info","msg":"Move data to workspace","time":"2024-01-23T13:43:17Z"}
+{"component":"DOCKER","instance":"","level":"info","msg":"Attach to internal network","time":"2024-01-23T13:43:18Z"}
+{"component":"TESTBED","instance":"1","level":"error","msg":"Error response from daemon: invalid mount config for type \"bind\": bind source path does not exist: /host_mnt/Users/aidamehammed/testMC/dl/testMC/data/data","time":"2024-01-23T13:43:18Z"}
+{"component":"TESTBED","instance":"1","level":"info","msg":"Stopping test id: 1","time":"2024-01-23T13:43:18Z"}
+{"component":"TESTBED","instance":"","level":"info","msg":"Create new test","time":"2024-01-23T13:43:28Z"}
+{"component":"TESTBED","instance":"1","level":"info","msg":"Create volumes and containers...","time":"2024-01-23T13:43:28Z"}
+{"component":"DOCKER","instance":"","level":"info","msg":"Create volume test_1_input_0_1706017408","time":"2024-01-23T13:43:28Z"}
+{"component":"DOCKER","instance":"","level":"info","msg":"Create volume test_1_output_0_1706017408","time":"2024-01-23T13:43:28Z"}
+{"component":"TESTBED","instance":"1","level":"info","msg":"Move data to workspace skipped, no source provided","time":"2024-01-23T13:43:28Z"}
+{"component":"TESTBED","instance":"1","level":"info","msg":"Move generic data to workspace skipped, no source provided","time":"2024-01-23T13:43:28Z"}
+{"component":"TESTBED","instance":"1","level":"info","msg":"Start application","time":"2024-01-23T13:43:28Z"}
+{"component":"DOCKER","instance":"","level":"info","msg":"Attach to internal network","time":"2024-01-23T13:43:28Z"}
+{"component":"TESTBED","instance":"1","level":"info","msg":"Append app to list","time":"2024-01-23T13:43:30Z"}
+{"component":"DOCKER","instance":"","level":"info","msg":"Create volume test_1_input_1_1706017410","time":"2024-01-23T13:43:30Z"}
+{"component":"DOCKER","instance":"","level":"info","msg":"Create volume test_1_output_1_1706017410","time":"2024-01-23T13:43:30Z"}
+{"component":"TESTBED","instance":"1","level":"info","msg":"Move data to workspace skipped, no source provided","time":"2024-01-23T13:43:30Z"}
+{"component":"TESTBED","instance":"1","level":"info","msg":"Move generic data to workspace skipped, no source provided","time":"2024-01-23T13:43:30Z"}
+{"component":"TESTBED","instance":"1","level":"info","msg":"Start application","time":"2024-01-23T13:43:30Z"}
+{"component":"DOCKER","instance":"","level":"info","msg":"Attach to internal network","time":"2024-01-23T13:43:30Z"}
+{"component":"TESTBED","instance":"1","level":"info","msg":"Append app to list","time":"2024-01-23T13:43:31Z"}
+{"component":"TESTBED","instance":"1","level":"info","msg":"Link fc_dl_766791251 with global socket server","time":"2024-01-23T13:43:31Z"}
+{"component":"TESTBED","instance":"1","level":"info","msg":"Link fc_dl_64306168 with global socket server","time":"2024-01-23T13:43:31Z"}
+{"component":"TESTBED","instance":"1","level":"info","msg":"Start local socket server","time":"2024-01-23T13:43:31Z"}
+{"component":"TESTBED","instance":"1","level":"info","msg":"Start local socket server","time":"2024-01-23T13:43:31Z"}
+{"component":"TESTBED","instance":"1","level":"info","msg":"Link to global address","time":"2024-01-23T13:43:31Z"}
+{"component":"TESTBED","instance":"1","level":"info","msg":"Link to global address","time":"2024-01-23T13:43:31Z"}
+{"component":"GLOBAL","instance":"","level":"info","msg":"Registered new coordinator controller","time":"2024-01-23T13:43:31Z"}
+{"component":"LOCAL","instance":"","level":"info","msg":"Received setup trigger","time":"2024-01-23T13:43:31Z"}
+{"component":"LOCAL","instance":"","level":"info","msg":"Received setup trigger","time":"2024-01-23T13:43:31Z"}
+{"component":"GLOBAL","instance":"","level":"info","msg":"Registered new participant controller","time":"2024-01-23T13:43:31Z"}
+{"component":"LOCAL","instance":"","level":"error","msg":"Got error code during setup: 502","time":"2024-01-23T13:43:31Z"}
+{"component":"LOCAL","instance":"","level":"error","msg":"Got error during setup to http://172.20.0.4:9000: Post \"http://172.20.0.4:9000/setup\": dial tcp 172.20.0.4:9000: connect: connection refused","time":"2024-01-23T13:43:31Z"}
+{"component":"GLOBAL","instance":"","level":"info","msg":"Setup 2a949b9465eb43b48ac79da4e16ca737037c2e9b7894afa29ecd177f01ac9232","time":"2024-01-23T13:43:32Z"}
+{"component":"TESTBED","instance":"1","level":"info","msg":"Setup triggered","time":"2024-01-23T13:43:32Z"}
+{"component":"TESTBED","instance":"1","level":"info","msg":"2 apps and server created and running","time":"2024-01-23T13:43:32Z"}
+{"component":"LOCAL","instance":"","level":"info","msg":"http://172.20.0.4:9000/status: Finished","time":"2024-01-23T13:43:34Z"}
+{"component":"GLOBAL","instance":"","level":"info","msg":"Participant (ID: 6617e54340b1c6be) finished the current step","time":"2024-01-23T13:43:34Z"}
+{"component":"LOCAL","instance":"","level":"info","msg":"Shutdown","time":"2024-01-23T13:43:35Z"}
+{"component":"LOCAL","instance":"","level":"info","msg":"Shutdown","time":"2024-01-23T13:43:35Z"}
+{"component":"GLOBAL","instance":"","level":"error","msg":"Participant (ID: 6617e54340b1c6be): relaying stopped due to: EOF","time":"2024-01-23T13:43:35Z"}
+{"component":"GLOBAL","instance":"","level":"error","msg":"Participant (ID: 23e85175121f42db): relaying stopped due to: EOF","time":"2024-01-23T13:43:35Z"}
+{"component":"TESTBED","instance":"1","level":"info","msg":"Stopping test id: 1","time":"2024-01-23T13:43:35Z"}
+{"component":"TESTBED","instance":"1","level":"info","msg":"Stopping container fc_dl_766791251","time":"2024-01-23T13:43:35Z"}
+{"component":"DOCKER","instance":"","level":"info","msg":"Move data to host","time":"2024-01-23T13:43:36Z"}
+{"component":"DOCKER","instance":"","level":"info","msg":"Attach to internal network","time":"2024-01-23T13:43:36Z"}
+{"component":"DOCKER","instance":"","level":"info","msg":"Remove application","time":"2024-01-23T13:43:37Z"}
+{"component":"DOCKER","instance":"","level":"debug","msg":"Intermediary container used for moving data from volume to host has been removed","time":"2024-01-23T13:43:38Z"}
+{"component":"TESTBED","instance":"1","level":"info","msg":"Saved output volume content to /testMC/data/tests/results_test_1_client_0_fc_dl_766791251.zip","time":"2024-01-23T13:43:38Z"}
+{"component":"DOCKER","instance":"","level":"info","msg":"Remove volume test_1_output_0_1706017408","time":"2024-01-23T13:43:38Z"}
+{"component":"TESTBED","instance":"1","level":"info","msg":"Deleted volume test_1_output_0_1706017408","time":"2024-01-23T13:43:38Z"}
+{"component":"DOCKER","instance":"","level":"info","msg":"Remove volume test_1_input_0_1706017408","time":"2024-01-23T13:43:38Z"}
+{"component":"TESTBED","instance":"1","level":"info","msg":"Deleted volume test_1_input_0_1706017408","time":"2024-01-23T13:43:38Z"}
+{"component":"TESTBED","instance":"1","level":"info","msg":"Stopping container fc_dl_64306168","time":"2024-01-23T13:43:38Z"}
+{"component":"DOCKER","instance":"","level":"info","msg":"Move data to host","time":"2024-01-23T13:43:39Z"}
+{"component":"DOCKER","instance":"","level":"info","msg":"Attach to internal network","time":"2024-01-23T13:43:39Z"}
+{"component":"DOCKER","instance":"","level":"info","msg":"Remove application","time":"2024-01-23T13:43:40Z"}
+{"component":"DOCKER","instance":"","level":"debug","msg":"Intermediary container used for moving data from volume to host has been removed","time":"2024-01-23T13:43:41Z"}
+{"component":"TESTBED","instance":"1","level":"info","msg":"Saved output volume content to /testMC/data/tests/results_test_1_client_1_fc_dl_64306168.zip","time":"2024-01-23T13:43:41Z"}
+{"component":"DOCKER","instance":"","level":"info","msg":"Remove volume test_1_output_1_1706017410","time":"2024-01-23T13:43:41Z"}
+{"component":"TESTBED","instance":"1","level":"info","msg":"Deleted volume test_1_output_1_1706017410","time":"2024-01-23T13:43:41Z"}
+{"component":"DOCKER","instance":"","level":"info","msg":"Remove volume test_1_input_1_1706017410","time":"2024-01-23T13:43:41Z"}
+{"component":"TESTBED","instance":"1","level":"info","msg":"Deleted volume test_1_input_1_1706017410","time":"2024-01-23T13:43:41Z"}

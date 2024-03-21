@@ -1,0 +1,7 @@
+featurecloud
+bios
+pandas
+torch
+torch_pruning
+torchvision
+
