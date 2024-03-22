@@ -24,7 +24,7 @@ max_iter: 10
 ```
 ### Training Options
 #### Model
-File name will provided as generic data to clients, which later will be imported by the app. The model class should have the name 'Model' and include the forward method. For more details, please refer to the example provided in [models/pytorch/models](/data/sample_data/generic/cnn.py) 
+File name will provided as generic data to clients, which later will be imported by the app. The model class should have the name 'Model' and include the forward method. More models available under:  [models/pytorch/models](/data/sample_data/generic/cnn.py) 
 
 `model`: This field should specify the Python file containing the model implementation. It is expected to be in the .py format.
 
@@ -46,9 +46,6 @@ These datasets will be loaded using the `torch.utils.data.DataLoader` class.
 
 
 ### Pruning Settings 
-Like optimizers, end-users can specify a loss function and its arguments in the deep learning app in the config file.
-PyTorch's loss functions can be imported from [`torch.nn`](https://pytorch.org/docs/stable/nn).
-Same as for layers and optimizer parameters, default values will be used for parameters unless it is mentioned in the config file.
 ```python
 reference_model: model.py
 example_input: (32, 3, 32, 32)
@@ -58,12 +55,12 @@ learning_rate_finetune: 0.001
 
 pruning_ratio: 0.5
 iterative_steps: 1
-imp: tp.pruner.importance.MagnitudeImportance(p=2) #  options listed in README
+imp: tp.pruner.importance.MagnitudeImportance(p=2) 
 ```
 
 #### Pruning Hyper-Parameters config
 `reference_model`: Can be same as model or other Python file stored at same place like model. Optional. If no model provided pruned values will be filled 
-with zeroes instead of the weights of reference model.
+with zeroes instead of the weights of reference model in reconstruction phase before updating global model.
 
 `example_input`: Shape of the input data.
 
@@ -98,13 +95,13 @@ For more detailed information check [Torch-Pruning](https://github.com/VainF/Tor
 
 #### Prerequisite
 
-To run the model compression app, you should install Docker and FeatureCloud pip package:
+To run the model compression app, you should install Docker, FeatureCloud pip package and Torch_Pruning library:
 
 ```shell
-pip install featurecloud, torch-pruning
+pip install featurecloud, torch_pruning
 ```
 
-Then either download the model compression app image from the FeatureCloud docker repository:
+Then either download the pruning app image from the FeatureCloud docker repository:
 
 ```shell
 featurecloud app download featurecloud.ai/fc_pruning
@@ -116,7 +113,7 @@ Or build the app locally:
 featurecloud app build featurecloud.ai/fc_pruning
 ```
 
-Please provide example data so others can run the model compression app with the desired settings in the `config.yml` file.
+Please provide example data so others can run the pruning app with the desired settings in the `config.yml` file.
 
 #### Run the model compression app in the test-bed
 
@@ -126,4 +123,4 @@ You can run the model compression app as a standalone app in the [FeatureCloud t
 featurecloud test start --app-image featurecloud.ai/fc_pruning --client-dirs './sample_data/c1,./sample_data/c2' --generic-dir './sample_data/generic'
 ```
 
-Sources: [Featurecloud] (https://github.com/FeatureCloud)
+Sources: [Featurecloud](https://github.com/FeatureCloud)
