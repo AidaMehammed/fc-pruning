@@ -14,7 +14,7 @@ setuptools.setup(name="fc-pruning",
                  project_urls={
                      "Bug Tracker": "https://github.com/AidaMehammed/fc-pruning",
                  },
-                 packages=setuptools.find_packages(include=['Compress.*']),
+                 packages=setuptools.find_packages(include=['Compress','Compress.*']),
 
                  classifiers=[
                      "Programming Language :: Python :: 3",
