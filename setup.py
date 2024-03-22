@@ -3,14 +3,14 @@ import setuptools
 with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
-setuptools.setup(name="fc-pruning",
+setuptools.setup(name="fc_pruning",
                  version="0.0.1",
-                 author="Aida Mehammed",
+                 author="FeatureCloud",
                  author_email="aida.mehammed@studium.uni-hamburg.de",
                  description="Image Classification Pruning",
                  long_description=long_description,
                  long_description_content_type="text/markdown",
-                 url="https://github.com/AidaMehammed/Image-Classification-Pruning",
+                 url="https://github.com/FeatureCloud/fc_pruning",
                  project_urls={
                      "Bug Tracker": "https://github.com/FeatureCloud/app-template/issues",
                  },
