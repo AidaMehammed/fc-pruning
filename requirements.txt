@@ -1,5 +1,4 @@
 featurecloud
 torch_pruning
-bios
-torchvision
+
 
