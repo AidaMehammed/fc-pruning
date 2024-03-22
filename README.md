@@ -1,4 +1,4 @@
-# [FeatureCloud Model Compression](https://featurecloud.ai/app/deep-learning)
+# [FeatureCloud Model Compression]()
 ### Image Classification with Pruning
 
 This app enables image classification application utilizing pruning techniques for model compression.  The application employs federated learning to train and compress deep neural network models, leveraging the [Torch-Pruning](https://github.com/VainF/Torch-Pruning/tree/master) library.
@@ -107,13 +107,13 @@ pip install featurecloud, torch-pruning
 Then either download the model compression app image from the FeatureCloud docker repository:
 
 ```shell
-featurecloud app download featurecloud.ai/fc_model_compression
+featurecloud app download featurecloud.ai/fc_pruning
 ```
 
 Or build the app locally:
 
 ```shell
-featurecloud app build featurecloud.ai/fc_model_compression
+featurecloud app build featurecloud.ai/fc_pruning
 ```
 
 Please provide example data so others can run the model compression app with the desired settings in the `config.yml` file.
@@ -123,7 +123,7 @@ Please provide example data so others can run the model compression app with the
 You can run the model compression app as a standalone app in the [FeatureCloud test-bed](https://featurecloud.ai/development/test) or [FeatureCloud Workflow](https://featurecloud.ai/projects). You can also run the app using CLI:
 
 ```shell
-featurecloud test start --app-image featurecloud.ai/fc_model_compression --client-dirs './sample_data/c1,./sample_data/c2' --generic-dir './sample_data/generic'
+featurecloud test start --app-image featurecloud.ai/fc_pruning --client-dirs './sample_data/c1,./sample_data/c2' --generic-dir './sample_data/generic'
 ```
 
 Sources: [Featurecloud] (https://github.com/FeatureCloud)
