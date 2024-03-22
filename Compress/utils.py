@@ -15,7 +15,19 @@ def get_last_layer(model):
         if isinstance(layer, nn.Linear):
             last_layer = layer
     return last_layer
+    
+def create_channel_mask(pruned_model):
+    mask_list = []
 
+    for param in pruned_model.parameters():
+        mask = torch.ones_like(param)
+        for idx, val in enumerate(param.view(-1)):
+            if val == 0:
+                mask.view(-1)[idx] = 0
+        mask_list.append(mask)
+
+    return mask_list
+    
 def soft_prune(model, imp, example_inputs, iterative_steps=None, pruning_ratio=None, ignored_layers=None):
     pmodel = copy.deepcopy(model)
 
@@ -48,7 +60,6 @@ def soft_prune(model, imp, example_inputs, iterative_steps=None, pruning_ratio=N
     mask_client_list = create_channel_mask(pmodel)
 
     return pmodel, mask_client_list
-
 
 def hard_prune_and_finetune(model, imp, example_inputs,learning_rate, iterative_steps=None, pruning_ratio=None, ignored_layers=None,
                             epochs=None, train_loader=None):
