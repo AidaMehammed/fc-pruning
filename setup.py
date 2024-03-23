@@ -10,7 +10,7 @@ setuptools.setup(name="fc-pruning",
                  description="FC-Pruning",
                  long_description=long_description,
                  long_description_content_type="text/markdown",
-                 url="https://github.com/FeatureCloud/fc-pruning",
+                 url="https://github.com/AidaMehammed/fc-pruning",
                  project_urls={
                      "Bug Tracker": "https://github.com/AidaMehammed/fc-pruning",
                  },
