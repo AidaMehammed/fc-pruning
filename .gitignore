@@ -1,3 +1,5 @@
 .idea
 venv
 *.pyc
+dist/*
+fc_pruning.egg-info/*
