@@ -2,7 +2,6 @@ from FeatureCloud.app.engine.app import AppState
 from typing import TypedDict, Union, List, Type
 import torch
 import torch_pruning as tp
-import pickle
 
 import fc_pruning.Compress.utils as pf
 

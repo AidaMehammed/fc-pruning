@@ -6,9 +6,6 @@ import os
 import sys
 
 
-def print_test():
-    print(' It works ')
-
 
 def get_weights(model):
     return [param.data for param in model.parameters()]
